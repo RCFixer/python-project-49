@@ -22,7 +22,8 @@ def main():
             print("Correct!")
             answers += 1
         else:
-            print(f"'{question}' is wrong answer ;(. Correct answer was '{even_or_odd}'.\nLet's try again, {name}!")
+            print(f"'{question}' is wrong answer ;(. Correct answer "
+                  f"was '{even_or_odd}'.\nLet's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
 

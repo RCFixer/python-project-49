@@ -17,7 +17,8 @@ def game_logic(answer: int, name: str, first_num: int, second_num: int) -> bool:
         print("Correct!")
         return True
     else:
-        print(f"'{question}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!")
+        print(f"'{question}' is wrong answer ;(. Correct answer was"
+              f" '{answer}'.\nLet's try again, {name}!")
         return False
 
 

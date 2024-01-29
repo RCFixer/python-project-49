@@ -17,7 +17,8 @@ def game_logic(answer: int, name: str, values) -> bool:
         print("Correct!")
         return True
     else:
-        print(f"'{question}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!")
+        print(f"'{question}' is wrong answer ;(. Correct answer was"
+              f" '{answer}'.\nLet's try again, {name}!")
         return False
 
 
@@ -27,7 +28,7 @@ def get_values(start_values: int) -> (list, int):
     for value in range(randint(5, 10)):
         start_values += difference
         result.append(str(start_values))
-    secret_value = randint(0, len(result)-1)
+    secret_value = randint(0, len(result) - 1)
     answer = result[secret_value]
     result[secret_value] = '..'
     return result, answer

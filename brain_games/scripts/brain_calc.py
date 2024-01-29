@@ -17,7 +17,8 @@ def game_logic(first_number, second_number, answer, action, name):
         print("Correct!")
         return True
     else:
-        print(f"'{question}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!")
+        print(f"'{question}' is wrong answer ;(. Correct answer was "
+              f"'{answer}'.\nLet's try again, {name}!")
         return False
 
 
@@ -33,13 +34,16 @@ def main():
         match action:
             case '+':
                 answer = first_number + second_number
-                result = game_logic(first_number, second_number, answer, action, name)
+                result = game_logic(first_number, second_number,
+                                    answer, action, name)
             case '-':
                 answer = first_number - second_number
-                result = game_logic(first_number, second_number, answer, action, name)
+                result = game_logic(first_number, second_number,
+                                    answer, action, name)
             case '*':
                 answer = first_number * second_number
-                result = game_logic(first_number, second_number, answer, action, name)
+                result = game_logic(first_number, second_number,
+                                    answer, action, name)
         if result is False:
             break
     if result is True:
